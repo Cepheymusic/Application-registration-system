@@ -28,9 +28,9 @@ class UserServiceTest {
     private UserRepository userRepository;
 
     static UserEntity user1 = new UserEntity(
-            1L, "Test", "Testing", "", UserRole.ADMIN);
+            1L, "Test", "Testing", "", UserRole.ADMIN, List.of());
     static UserEntity user2 = new UserEntity(
-            2L, "Test2", "Testing2", "", UserRole.ADMIN);
+            2L, "Test2", "Testing2", "", UserRole.ADMIN, List.of());
     static UpdateUser updateUser = new UpdateUser("Test3", "Testing3");
     static CustomUserDetails customUserDetails = new CustomUserDetails(user1);
     @BeforeEach

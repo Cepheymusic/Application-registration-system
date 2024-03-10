@@ -35,9 +35,9 @@ class ProcessingServiceTest {
     @Mock
     private RequestRepository requestRepository;
     static UserEntity user1 = new UserEntity(
-            1L, "Test", "Testing", "", UserRole.USER);
+            1L, "Test", "Testing", "", UserRole.USER, List.of());
     static UserEntity user2 = new UserEntity(
-            2L, "Test", "Testing", "", UserRole.ADMIN);
+            2L, "Test", "Testing", "", UserRole.ADMIN, List.of());
     static RequestEntity request1 = new RequestEntity(
             1L, RequestStatus.DRAFT, "Test", "TestPhone", "Name", user1,
             LocalDateTime.now());
